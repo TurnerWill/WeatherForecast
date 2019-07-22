@@ -12,7 +12,7 @@ Get request to fetch city weather.Takes in two parameter-city name and API key.
     Call< WResponse > getWeatherByCity(@Query("q") String city, @Query("units") String units,@Query("appid") String apiKey);
 
     @GET("/data/2.5/forecast?")
-    Call<WResponse> getFiveDay(@Query("q") String city, @Query("units") String units,@Query("appid") String apiKey);
+    Call<WResponse2> getFiveDay(@Query("q") String city, @Query("units") String units,@Query("appid") String apiKey);
 
 }
 
