@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/philadelphia_center"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -34,7 +35,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@id/humidity_placeHolder"
         app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintLeft_toRightOf="@id/weatherPic_placeHolder"

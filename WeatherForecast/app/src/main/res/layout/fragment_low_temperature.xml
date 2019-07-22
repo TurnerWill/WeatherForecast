@@ -9,6 +9,8 @@
         android:layout_height="match_parent"
         android:text="low temperature"
         android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
         android:gravity="center"/>
 
 </FrameLayout>
