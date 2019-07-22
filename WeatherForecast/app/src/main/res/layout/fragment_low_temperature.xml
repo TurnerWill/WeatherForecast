@@ -4,11 +4,11 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/fragment_sunset"
+        android:id="@+id/fragment_low_temperature"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="sunset"
-        android:textSize="50dp"
-        android:gravity="center" />
+        android:text="low temperature"
+        android:textSize="15dp"
+        android:gravity="center"/>
 
 </FrameLayout>

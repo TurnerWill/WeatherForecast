@@ -8,40 +8,42 @@
 
     <FrameLayout
         android:id="@+id/weatherPic_placeHolder"
-        android:layout_width="200dp"
+        android:layout_width="175dp"
         android:layout_height="100dp"
         android:background="@color/colorPrimaryDark"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"/>
 
     <FrameLayout
         android:id="@+id/cityName_placeHolder"
         android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginLeft="16dp"
-        android:background="@color/colorPrimaryDark"
-        app:layout_constraintTop_toBottomOf="@id/weatherPic_placeHolder"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="15dp"
-        tools:layout_editor_absoluteY="170dp" />
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherPic_placeHolder" />
 
 
     <FrameLayout
         android:id="@+id/temperature_placeHolder"
         android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
         android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@id/humidity_placeHolder"
         app:layout_constraintHorizontal_bias="0.917"
-        app:layout_constraintLeft_toRightOf="@id/cityName_placeHolder"
+        app:layout_constraintLeft_toRightOf="@id/weatherPic_placeHolder"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/weatherPic_placeHolder" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
 
     <FrameLayout
-        android:id="@+id/sunset_placeHolder"
+        android:id="@+id/humidity_placeHolder"
         android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginLeft="16dp"
@@ -51,10 +53,38 @@
         app:layout_constraintTop_toBottomOf="@id/cityName_placeHolder"
         />
 
+    <FrameLayout
+        android:id="@+id/high_temperature_placeHolder"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintLeft_toRightOf="@id/cityName_placeHolder"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature_placeHolder" />
+
+    <FrameLayout
+        android:id="@+id/low_temperature_placeHolder"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintLeft_toRightOf="@id/humidity_placeHolder"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/high_temperature_placeHolder" />
+
+
+
+
+
     <LinearLayout
         android:weightSum="5"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
